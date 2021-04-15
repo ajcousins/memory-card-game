@@ -20,7 +20,6 @@
 }
 
 .modal {
-  /* background-color: rgb(97, 96, 95); */
   color: white;
   width: 100%;
   height: 100%;
@@ -28,7 +27,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: rgb(0, 0, 0);

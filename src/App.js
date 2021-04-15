@@ -11,6 +11,10 @@ function App() {
   const [highScore, setHighScore] = useState(0);
   const [gameStatus, setGameStatus] = useState(0);
 
+  useEffect(() => {
+    document.title = "Movie Memory Card Game";
+  }, []);
+
   const scoreHandler = (number) => {
     if (currentStreak.includes(number)) {
       setCurrentStreak([]);

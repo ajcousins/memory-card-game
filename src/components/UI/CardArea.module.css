@@ -1,5 +1,4 @@
 .extents {
-  /* border: 1px solid red; */
   margin-top: 1em;
   display: flex;
   justify-content: space-between;
@@ -31,7 +30,6 @@
     display: grid;
     grid-template-columns: 183px 183px 183px 183px 183px 183px;
   }
-
   .card {
     width: 165px;
     height: 258px;
