@@ -27,7 +27,6 @@ function App() {
 
   useEffect(() => {
     if (highScore === 12) {
-      console.log("You win!");
       setGameStatus(1);
     }
   }, [highScore]);

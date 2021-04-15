@@ -22,11 +22,16 @@ const CardArea = (props) => {
     props.onShuffle(number);
     const arrCopy = [...currentState];
     const newArr = [];
-    while (arrCopy.length > 0) {
-      let randomIndex = Math.floor(Math.random() * arrCopy.length);
-      let item = arrCopy.splice(randomIndex, 1);
+
+    const shuffle = (cards) => {
+      if (cards.length === 0) return;
+      let randomIndex = Math.floor(Math.random() * cards.length);
+      let item = cards.splice(randomIndex, 1);
       newArr.push(item[0]);
-    }
+      shuffle(cards);
+    };
+    shuffle(arrCopy);
+
     setCurrentState(newArr);
   };
 
